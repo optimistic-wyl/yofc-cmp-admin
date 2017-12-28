@@ -8,40 +8,40 @@ import uiRouter from '@uirouter/angularjs';
 import coreModule from './core/core.module';
 import indexComponents from './index.components';
 import indexRoutes from './index.routes';
-import mainModule from './pages/main/main.module';
+import mainModule from './modules/main/main.module';
 
 
 const App = angular.module(
-  "yofc-cmp-admin", [
-    // plugins
-    uiRouter,
-    "ngAnimate", 
-	"ngCookies", 
-	"ngTouch", 
-	"ngSanitize", 
-	"ngMessages", 
-	"ngAria", 
-	"restangular", 
-	"oc.lazyLoad",
+    "yofc-cmp-admin", [
+        // plugins
+        uiRouter,
+        "ngAnimate",
+        "ngCookies",
+        "ngTouch",
+        "ngSanitize",
+        "ngMessages",
+        "ngAria",
+        "restangular",
+        "oc.lazyLoad",
 
-    // core
-    coreModule.name,
+        // core
+        coreModule.name,
 
-    // components
-    indexComponents.name,
+        // components
+        indexComponents.name,
 
-    // routes
-    indexRoutes.name,
+        // routes
+        indexRoutes.name,
 
-    // pages
-    mainModule.name
+        // modules
+        mainModule.name
 
-  ]
+    ]
 );
 
 App
-  .config(config)
-  .run(run);
+    .config(config)
+    .run(run);
 
 
 

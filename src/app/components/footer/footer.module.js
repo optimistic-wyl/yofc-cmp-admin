@@ -6,6 +6,6 @@ import './footer.scss';
 const footerModule = angular.module('footer-module', []);
 
 footerModule
-    .component('footerTest', new FooterComponent());
+    .component('yofcCmpFooter', new FooterComponent());
 
 export default footerModule;

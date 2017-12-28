@@ -14,7 +14,7 @@ export default function(app) {
 
         const deferred = $q.defer();
         require.ensure([], require => {
-            const asyncModule = require('../../pages/async-page-example/async.module');
+            const asyncModule = require('../../modules/async-page-example/async.module');
             $ocLazyLoad.load({
                 name: asyncModule.default.name,
             });
