@@ -8,7 +8,7 @@ import moment from 'moment';
 
 // import angularLogo from '_images/angular.png';
 
-export default class MainController {
+export default class CloudResourceOverviewController {
     constructor($log) {
         'ngInject';
         this.$log = $log;
