@@ -1,7 +1,55 @@
-//定义当前上下文采用的12栅格系统
-$neat-grid:( columns:12, gutter:20px);
+// 引入bourbon neat栅格系统
+@import '../../../assets/styles/sass/yofc-neat/neat.scss';
+// 定义当前上下文采用的12栅格系统
+$main-grid:( columns:12, gutter:20px);
 main {
+    padding-top: 20px;
+    height: 100%;
+    box-sizing: border-box;
     .row-wrapper {
-        // @include grid-container;
+        @include grid-container;
+        // row 1
+        &:nth-child(1) {
+            height: 27.272727%;
+        }
+        // row 2
+        &:nth-child(2) {
+            height: 32.467532%;
+        }
+        // row3
+        &:nth-child(3) {
+            height: 31.385281%;
+        }
+        >div {
+            //row 1 ============================================
+            // 项目云主机
+            &#project-cloud-host {
+                @include grid-column(3, $main-grid);
+            }
+            // 项目配额详情
+            &#project-amount-detail {
+                @include grid-column(9, $main-grid);
+            }
+            //row 2 ============================================
+            // 告警事件
+            &#warning-events {
+                @include grid-column(4, $main-grid);
+            }
+            // 资源项目详情
+            &#resource-project-detail {
+                @include grid-column(8, $main-grid);
+            }
+            //row 3 ============================================
+            // 安全资源使用状态
+            &#security-resource-use-status {
+                @include grid-column(12, $main-grid);
+            }
+        }
+        .col-wrapper {
+            border-radius: 4px;
+            height: 100%;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
     }
 }

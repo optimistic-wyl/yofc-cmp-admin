@@ -1,0 +1,17 @@
+// 云资源管理页面用到的面板
+.yofc-panel {
+    .yofc-panel-header {
+        h2 {
+            height: 55px;
+            line-height: 55px;
+            font-size: 14px;
+            // 覆盖bt框架样式
+            margin-top: 0;
+            margin-bottom: 0;
+            border-bottom: 1px solid #e8e8e8;
+            letter-spacing: 0.3em;
+            text-indent: 1.42857143em;
+        }
+    }
+    .yofc-panel-body {}
+}

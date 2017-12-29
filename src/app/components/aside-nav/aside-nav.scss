@@ -21,6 +21,7 @@ ul {
             }
             >span {
                 float: left;
+                // 导航item icon
                 &.yofc-icon {
                     display: inline-block;
                     width: 24px;
@@ -29,6 +30,10 @@ ul {
                     margin-left: 6.818182%;
                     margin-right: 2.272727%;
                     margin-top: 8px;
+                }
+                // 导航item 文字
+                &.nav-item-txt {
+                    text-overflow: ellipsis;
                 }
             }
         }
