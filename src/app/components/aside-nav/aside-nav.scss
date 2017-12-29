@@ -1,4 +1,4 @@
-ul {
+ul.aside-nav {
     display: inline-block;
     width: 100%;
     margin-bottom: 0;
@@ -27,15 +27,36 @@ ul {
                     margin-left: 6.818182%;
                     margin-right: 2.272727%;
                     margin-top: 8px;
+                    // 不同的图标设置
+                    &.cloud-platform-overview-icon {
+                        background: url('../../../assets/images/icons/cloud-platform-overview-icon.png') no-repeat center center;
+                    }
+                    &.cloud-res-mgr-icon {
+                        background: url('../../../assets/images/icons/cloud-res-mgr-icon.png') no-repeat center center;
+                    }
+                    &.renter-amount-icon {
+                        background: url('../../../assets/images/icons/renter-amount-icon.png') no-repeat center center;
+                    }
+                    &.cloud-operation-icon {
+                        background: url('../../../assets/images/icons/cloud-operation-icon.png') no-repeat center center;
+                    }
+                    &.data-center-icon {
+                        background: url('../../../assets/images/icons/data-center-icon.png') no-repeat center center;
+                    }
                 }
                 // 导航item 文字
                 &.nav-item-txt {
                     text-overflow: ellipsis;
                 }
             }
+            &.active {
+                background-color: #006cff;
+            }
         }
         >ul {
             // display: none;
+            margin-bottom: 0;
+            padding-left: 0;
             background-color: #1e2430;
             li {
                 height: auto;
