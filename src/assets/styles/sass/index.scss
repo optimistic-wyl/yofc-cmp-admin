@@ -20,10 +20,13 @@ body.index {
         height: calc( 100% - 50px);
         aside {
             float: left;
+            position: relative;
             width: 11.458333%;
             height: 100%;
             background-color: #343f51;
             padding-top: 40px;
+            // 阴影投影效果
+            box-shadow: 5px 5px 14px 0px #ccc;
         }
         article {
             float: right;

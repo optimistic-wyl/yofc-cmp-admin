@@ -1,7 +1,10 @@
 .logo-wrap {
     float: left;
+    position: relative;
     width: 11.458333%;
     height: 100%;
+    // 阴影投影效果
+    box-shadow: 5px 0px 8px 0px #ddd;
     .logo-inner {
         width: 72.727273%;
         margin-top: 12px;
@@ -18,4 +21,5 @@
     width: 88.541667%;
     height: 100%;
     background-color: #fff;
+    box-shadow: 10px 5px 8px 0px #ddd;
 }
