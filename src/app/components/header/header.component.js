@@ -1,11 +1,11 @@
 'use strict';
 
 import headerTpl from './header.html';
-import headerController from './header.controller';
+import HeaderController from './header.controller';
 
-export default class FooterComponent {
+export default class HeaderComponent {
     constructor() {
         this.templateUrl = headerTpl;
-        this.controller = headerController;
+        this.controller = HeaderController;
     }
 }

@@ -1,12 +1,12 @@
 'use strict';
 
 
-import  _ from 'lodash/core';
+import _ from 'lodash/core';
 
 
 import moment from 'moment';
 
-import angularLogo from '_images/angular.png';
+// import angularLogo from '_images/angular.png';
 
 export default class MainController {
     constructor($log) {
@@ -15,12 +15,12 @@ export default class MainController {
     }
 
     $onInit() {
-        
+
         this.lodash_version = _.VERSION;
-        
-        
+
+
         this.moment_version = moment.version;
-        
-        this.angularLogo = angularLogo;
+
+        // this.angularLogo = angularLogo;
     }
 }

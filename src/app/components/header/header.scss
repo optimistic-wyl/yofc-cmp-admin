@@ -1,0 +1,21 @@
+.logo-wrap {
+    float: left;
+    width: 11.458333%;
+    height: 100%;
+    .logo-inner {
+        width: 72.727273%;
+        margin-top: 12px;
+        margin-left: 9.090909%;
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+}
+
+.menu-wrap {
+    float: right;
+    width: 88.541667%;
+    height: 100%;
+    background-color: #fff;
+}

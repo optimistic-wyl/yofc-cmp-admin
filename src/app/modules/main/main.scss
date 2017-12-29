@@ -1,0 +1,7 @@
+//定义当前上下文采用的12栅格系统
+$neat-grid:( columns:12, gutter:20px);
+main {
+    .row-wrapper {
+        // @include grid-container;
+    }
+}
