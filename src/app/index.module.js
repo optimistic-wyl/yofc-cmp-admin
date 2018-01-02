@@ -24,7 +24,7 @@ const App = angular.module(
         "ngAria",
         "restangular",
         "oc.lazyLoad",
-
+        "ui.bootstrap",
         // core
         coreModule.name,
 
