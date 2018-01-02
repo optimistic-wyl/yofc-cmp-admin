@@ -6,6 +6,8 @@ import cloudResourceManagerController from './cloud-resource-manager.controller.
 
 import cloudResourceOverviewModule from './cloud-resource-overview/cloud-resource-overview.module';
 
+import RouteMgrComponent from './network/route-mgr/route-mgr.component';
+
 
 const cloudResourceManagerModule = angular.module('cloud-resource-manager-module', [
     // 模块级路由
@@ -13,6 +15,7 @@ const cloudResourceManagerModule = angular.module('cloud-resource-manager-module
     cloudResourceOverviewModule.name
 ]);
 cloudResourceManagerModule
-    .controller('cloudResourceManagerController', cloudResourceManagerController);
+    .controller('cloudResourceManagerController', cloudResourceManagerController)
+    .component('RouteMgrComponent', new RouteMgrComponent());
 
 export default cloudResourceManagerModule;
