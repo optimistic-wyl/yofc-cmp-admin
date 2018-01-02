@@ -9,8 +9,6 @@ function routeConfig($urlRouterProvider, $stateProvider) {
             url: '/overview',
             templateUrl: cloudResourceOverviewTpl
         })
-
-    $urlRouterProvider.otherwise('/');
 }
 
 export default angular

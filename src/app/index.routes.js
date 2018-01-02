@@ -28,7 +28,7 @@ function routeConfig($urlRouterProvider, $stateProvider) {
         })
 
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/cloud-resource-mgr/overview');
 
 }
 
