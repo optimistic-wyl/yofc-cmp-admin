@@ -1,5 +1,5 @@
 // 引入bourbon neat栅格系统
-@import '../../../assets/styles/sass/yofc-neat/neat.scss';
+@import '../../../../assets/styles/sass/yofc-neat/neat.scss';
 // 定义当前上下文采用的12栅格系统
 $main-grid:( columns:12, gutter:20px);
 main {

@@ -8,7 +8,8 @@ import uiRouter from '@uirouter/angularjs';
 import coreModule from './core/core.module';
 import indexComponents from './index.components';
 import indexRoutes from './index.routes';
-import cloudResourceOverviewModule from './modules/cloud-resource-overview/cloud-resource-overview.module';
+// 云资源管理模块
+import cloudResourceManagerModule from './modules/cloud-resource-manager/cloud-resource-manager.module';
 
 
 const App = angular.module(
@@ -34,7 +35,7 @@ const App = angular.module(
         indexRoutes.name,
 
         // modules
-        cloudResourceOverviewModule.name
+        cloudResourceManagerModule.name
 
     ]
 );

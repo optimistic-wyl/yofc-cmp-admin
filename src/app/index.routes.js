@@ -1,8 +1,9 @@
 'use strict';
 
 
-import asyncTemplate from '!!file-loader?name=templates/[name].[ext]!./modules/async-page-example/async.html';
-
+// import asyncTemplate from '!!file-loader?name=templates/[name].[ext]!./modules/async-page-example/async.html';
+import asyncTemplate from './modules/async-page-example/async.html';
+import cloudResourceManagerTpl from './modules/cloud-resource-manager/cloud-resource-manager.html';
 
 function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
     'ngInject';
@@ -16,7 +17,12 @@ function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
             resolve: {
                 asyncPreloading: resolverProvider.asyncPagePrealoading
             }
-        });
+        })
+        .state('cloud-resource-mgr', {
+            url: '/cloud-resource-mgr',
+            templateUrl: cloudResourceManagerTpl,
+            controller: 'cloudResourceManagerController'
+        })
 
 
     $urlRouterProvider.otherwise('/');
