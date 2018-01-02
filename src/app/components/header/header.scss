@@ -4,7 +4,7 @@
     width: 11.458333%;
     height: 100%;
     // 阴影投影效果
-    box-shadow: 5px 0px 8px 0px #ddd;
+    // box-shadow: 5px 0px 8px 0px #ddd;
     .logo-inner {
         width: 72.727273%;
         margin-top: 12px;
@@ -14,12 +14,23 @@
             width: 100%;
         }
     }
+    //右边缘竖线
+    &:after {
+        content: ' ';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        border-right: 1px solid #181b20;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 }
 
 .menu-wrap {
     float: right;
     width: 88.541667%;
     height: 100%;
-    background-color: #fff;
+    // background-color: #fff;
     box-shadow: 10px 5px 8px 0px #ddd;
 }
