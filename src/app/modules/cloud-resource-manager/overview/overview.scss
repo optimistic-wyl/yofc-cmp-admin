@@ -3,11 +3,9 @@
 // 定义当前上下文采用的12栅格系统
 $main-grid:( columns:12, gutter:20px);
 main {
-    padding-top: 20px;
-    height: 100%;
-    box-sizing: border-box;
     .row-wrapper {
         @include grid-container;
+        @include grid-collapse;
         // row 1
         &:nth-child(1) {
             height: 27.272727%;

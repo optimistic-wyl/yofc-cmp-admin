@@ -1,3 +1,15 @@
-.cloud-resource-manager-module {
+main {
+    box-sizing: border-box;
+    height: calc( 100% - 70px);
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main-content {
+    background-color: #fff;
     height: 100%;
+    border-radius: 3px;
+    box-shadow: 3px 3px 6px 6px #eee;
+    border: 1px solid #e0e4ed;
 }
