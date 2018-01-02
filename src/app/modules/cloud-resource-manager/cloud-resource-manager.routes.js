@@ -5,7 +5,7 @@ import cloudResourceOverviewTpl from './cloud-resource-overview/cloud-resource-o
 function routeConfig($urlRouterProvider, $stateProvider) {
     'ngInject';
     $stateProvider
-        .state('cloud-resource-mgr.overview', {
+        .state('yofc-cmp.cloud-resource-mgr.overview', {
             url: '/overview',
             templateUrl: cloudResourceOverviewTpl
         })

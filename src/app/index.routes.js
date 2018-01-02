@@ -2,23 +2,26 @@
 
 
 // import asyncTemplate from '!!file-loader?name=templates/[name].[ext]!./modules/async-page-example/async.html';
-import asyncTemplate from './modules/async-page-example/async.html';
+// import asyncTemplate from './modules/async-page-example/async.html';
 import cloudResourceManagerTpl from './modules/cloud-resource-manager/cloud-resource-manager.html';
 
-function routeConfig($urlRouterProvider, $stateProvider, resolverProvider) {
+function routeConfig($urlRouterProvider, $stateProvider) {
     'ngInject';
 
 
     $stateProvider
-        .state('async', {
-            url: '/async',
-            templateUrl: asyncTemplate,
-            controller: 'asyncController',
-            resolve: {
-                asyncPreloading: resolverProvider.asyncPagePrealoading
-            }
+        .state('yofc-cmp', {
+            abstruct: true
         })
-        .state('cloud-resource-mgr', {
+        // .state('async', {
+        //     url: '/async',
+        //     templateUrl: asyncTemplate,
+        //     controller: 'asyncController',
+        //     resolve: {
+        //         asyncPreloading: resolverProvider.asyncPagePrealoading
+        //     }
+        // })
+        .state('yofc-cmp.cloud-resource-mgr', {
             url: '/cloud-resource-mgr',
             templateUrl: cloudResourceManagerTpl,
             controller: 'cloudResourceManagerController'
