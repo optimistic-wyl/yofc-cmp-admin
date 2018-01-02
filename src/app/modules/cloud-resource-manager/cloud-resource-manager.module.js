@@ -6,6 +6,7 @@ import cloudResourceManagerController from './cloud-resource-manager.controller.
 
 //云资源概览
 import OverViewComponent from './overview/overview.component';
+import RouteMgrComponent from './network/route-mgr/route-mgr.component';
 
 const cloudResourceManagerModule = angular.module('cloud-resource-manager-module', [
     // 模块级路由
@@ -14,5 +15,6 @@ const cloudResourceManagerModule = angular.module('cloud-resource-manager-module
 cloudResourceManagerModule
     .controller('cloudResourceManagerController', cloudResourceManagerController)
     // 云资源概览组件（页面组件，用于组织页面）
-    .component('overview', new OverViewComponent());
+    .component('overview', new OverViewComponent())
+    .component('routeMgr', new RouteMgrComponent());
 export default cloudResourceManagerModule;

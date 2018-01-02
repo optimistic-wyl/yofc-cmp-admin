@@ -9,10 +9,10 @@ function routeConfig($urlRouterProvider, $stateProvider) {
             url: '/overview',
             templateUrl: cloudResourceOverviewTpl
         })
-        .state('yofc-cmp.cloud-resource-mgr.network.route-mgr', {
+        .state('yofc-cmp.cloud-resource-mgr.route-mgr', {
             url: '/route-mgr',
-            component: 'RouteMgrComponent'
-        })        
+            component: 'routeMgr'
+        })
 
     $urlRouterProvider.otherwise('/');
 }
