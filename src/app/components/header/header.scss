@@ -54,7 +54,7 @@
         float: right;
         height: 100%;
         margin-bottom: 0;
-        li {
+        >li {
             display: block;
             height: 100%;
             float: left;
@@ -62,7 +62,7 @@
             border-left: 1px solid #181b22;
             border-right: 1px solid #181b22;
             margin-left: -1px;
-            a {
+            >a {
                 display: block;
                 color: #fff;
                 height: 100%;
