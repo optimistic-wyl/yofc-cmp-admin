@@ -26,7 +26,8 @@ import "jquery";
 
 import "restangular";
 
-
+//引入常用UI,angular-ui-bootstrap 2.5.6
+import "angular-ui-bootstrap";
 
 // local scripts
 //import "../assets/js/...";
