@@ -63,6 +63,16 @@ ul.aside-nav {
                 height: auto;
                 a {
                     span {
+                        &.list-style-circle {
+                            display: inline-block;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 3px;
+                            background-color: #fff;
+                            margin-top: 17px;
+                            margin-left: 26px;
+                            margin-right: -32px;
+                        }
                         &.nav-item-txt {
                             margin-left: 20%;
                         }
