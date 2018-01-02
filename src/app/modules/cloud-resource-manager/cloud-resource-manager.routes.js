@@ -1,6 +1,6 @@
 'use strict';
 // 云资源概况模板
-import cloudResourceOverviewTpl from './cloud-resource-overview/cloud-resource-overview.html';
+import cloudResourceOverviewTpl from './overview/overview.html';
 
 function routeConfig($urlRouterProvider, $stateProvider) {
     'ngInject';
