@@ -33,4 +33,57 @@
     height: 100%;
     // background-color: #fff;
     box-shadow: 10px 5px 8px 0px #ddd;
+    >ul {
+        display: inline-block;
+        float: right;
+        height: 100%;
+        margin-bottom: 0;
+        li {
+            display: block;
+            height: 100%;
+            float: left;
+            list-style: none;
+            border-left: 1px solid #181b22;
+            border-right: 1px solid #181b22;
+            margin-left: -1px;
+            a {
+                display: block;
+                color: #fff;
+                height: 100%;
+                line-height: 50px;
+                font-size: 13px;
+                padding-left: 1.38461538em;
+                padding-right: 1.38461538em;
+                &:hover {
+                    text-decoration: none;
+                    background-color: #006cff;
+                }
+                >span {
+                    &.yofc-icon {
+                        display: inline-block;
+                        width: 24px;
+                        height: 24px;
+                        // 不同的图标设置
+                        &.cloud-platform-overview-icon {
+                            background: url('../../../assets/images/icons/cloud-platform-overview-icon.png') no-repeat center center;
+                        }
+                        &.cloud-res-mgr-icon {
+                            background: url('../../../assets/images/icons/cloud-res-mgr-icon.png') no-repeat center center;
+                        }
+                        &.renter-amount-icon {
+                            background: url('../../../assets/images/icons/renter-amount-icon.png') no-repeat center center;
+                        }
+                        &.cloud-operation-icon {
+                            background: url('../../../assets/images/icons/cloud-operation-icon.png') no-repeat center center;
+                        }
+                        &.data-center-icon {
+                            background: url('../../../assets/images/icons/data-center-icon.png') no-repeat center center;
+                        }
+                    }
+                    // 导航item 文字
+                    &.menu-item-txt {}
+                }
+            }
+        }
+    }
 }
