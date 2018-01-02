@@ -54,6 +54,7 @@
                 font-size: 13px;
                 padding-left: 1.38461538em;
                 padding-right: 1.38461538em;
+                position: relative;
                 &:hover {
                     text-decoration: none;
                     background-color: #006cff;
@@ -63,25 +64,31 @@
                         display: inline-block;
                         width: 24px;
                         height: 24px;
+                        position: absolute;
+                        top: 12px;
+                        left: 13px;
                         // 不同的图标设置
-                        &.cloud-platform-overview-icon {
-                            background: url('../../../assets/images/icons/cloud-platform-overview-icon.png') no-repeat center center;
+                        &.yofc-cmp-database-icon {
+                            background: url('../../../assets/images/icons/yofc-cmp-database-icon.png') no-repeat center center;
                         }
-                        &.cloud-res-mgr-icon {
-                            background: url('../../../assets/images/icons/cloud-res-mgr-icon.png') no-repeat center center;
+                        &.yofc-cmp-current-project {
+                            background: url('../../../assets/images/icons/yofc-cmp-current-project.png') no-repeat center center;
                         }
-                        &.renter-amount-icon {
-                            background: url('../../../assets/images/icons/renter-amount-icon.png') no-repeat center center;
+                        &.yofc-cmp-workflow-order {
+                            background: url('../../../assets/images/icons/yofc-cmp-workflow-order.png') no-repeat center center;
                         }
-                        &.cloud-operation-icon {
-                            background: url('../../../assets/images/icons/cloud-operation-icon.png') no-repeat center center;
+                        &.yofc-cmp-current-user {
+                            background: url('../../../assets/images/icons/yofc-cmp-current-user.png') no-repeat center center;
                         }
-                        &.data-center-icon {
-                            background: url('../../../assets/images/icons/data-center-icon.png') no-repeat center center;
+                        &.yofc-cmp-calendar-icon {
+                            background: url('../../../assets/images/icons/yofc-cmp-calendar-icon.png') no-repeat center center;
                         }
                     }
                     // 导航item 文字
-                    &.menu-item-txt {}
+                    &.menu-item-txt {
+                        margin-left: 24px;
+                        margin-top: 3px;
+                    }
                 }
             }
         }
