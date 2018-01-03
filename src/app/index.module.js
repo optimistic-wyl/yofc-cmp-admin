@@ -8,6 +8,7 @@ import uiRouter from '@uirouter/angularjs';
 import coreModule from './core/core.module';
 import indexComponents from './index.components';
 import indexRoutes from './index.routes';
+
 // 云资源管理模块
 import cloudResourceManagerModule from './modules/cloud-resource-manager/cloud-resource-manager.module';
 
@@ -25,6 +26,8 @@ const App = angular.module(
         "restangular",
         "oc.lazyLoad",
         "ui.bootstrap",
+        "ng-table",
+
         // core
         coreModule.name,
 
