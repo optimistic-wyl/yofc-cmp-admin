@@ -2,9 +2,6 @@
 // 云资源概况模板
 import overviewTpl from './overview/overview.html';
 
-// 云计算资源模板
-import calcTpl from './calc/calc.html';
-
 // 云存储资源模板
 import storeTpl from './store/store.html';
 
@@ -21,7 +18,7 @@ function routeConfig($urlRouterProvider, $stateProvider) {
         })
         .state('yofc-cmp.cloud-resource-mgr.calc', {
             url: '/calc',
-            templateUrl: calcTpl
+            component: 'calc'
         })
 
     .state('yofc-cmp.cloud-resource-mgr.store', {

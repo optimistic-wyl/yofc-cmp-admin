@@ -1,6 +1,46 @@
 <div class="main-content">
     <uib-tabset active="active">
-        <uib-tab index="0" heading="快照管理">快照管理</uib-tab>
+        <uib-tab index="0" heading="快照管理">
+            <table ng-table="$ctrl.tableParams" show-filter="false" class="table">
+                <tr ng-repeat="user in $data">
+                    <td data-title="'镜像名称/ID'" header-class="'text-left'" sortable="'mirrorName'" filter="{ 'mirrorName': 'text' }">
+                        {{user.mirrorName}}
+                    </td>
+                    <td data-title="'类型'" header-class="'text-right'" sortable="'type'" filter="{ 'type': 'text' }">
+                        {{user.type}}
+                    </td>
+                    <td data-title="'系统类型'" header-class="'text-right'" sortable="'systemType'" filter="{ 'systemType': 'text' }">
+                        {{user.systemType}}
+                    </td>
+
+                    <td data-title="'镜像类型'" header-class="'text-right'" sortable="'mirrorType'" filter="{ 'mirrorType': 'text' }">
+                        {{user.mirrorType}}
+                    </td>
+
+                    <td data-title="'公有'" header-class="'text-right'" sortable="'isPublic'" filter="{ 'isPublic': 'text' }">
+                        {{user.isPublic}}
+                    </td>
+
+                    <td data-title="'系统架构'" header-class="'text-right'" sortable="'systemStructure'" filter="{ 'systemStructure': 'text' }">
+                        {{user.systemStructure}}
+                    </td>
+
+                    <td data-title="'磁盘格式'" header-class="'text-right'" sortable="'diskFormat'" filter="{ 'diskFormat': 'text' }">
+                        {{user.diskFormat}}
+                    </td>
+
+                    <td data-title="'状态'" header-class="'text-right'" sortable="'status'" filter="{ 'status': 'text' }">
+                        {{user.status}}
+                    </td>
+
+                    <td data-title="'创建时间'" header-class="'text-right'" sortable="'createTime'" filter="{ 'createTime': 'text' }">
+                        {{user.createTime}}
+                    </td>
+
+
+                </tr>
+            </table>
+        </uib-tab>
         <uib-tab index="1" heading="镜像管理">镜像管理</uib-tab>
         <uib-tab index="2" heading="云主机管理">云主机管理</uib-tab>
     </uib-tabset>
