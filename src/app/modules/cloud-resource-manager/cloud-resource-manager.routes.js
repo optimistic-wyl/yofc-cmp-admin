@@ -8,9 +8,6 @@ import calcTpl from './calc/calc.html';
 // 云存储资源模板
 import storeTpl from './store/store.html';
 
-// 云网络资源模板
-import networkTpl from './network/network.html';
-
 // 云安全资源模板
 import securityTpl from './security/security.html';
 
@@ -34,15 +31,11 @@ function routeConfig($urlRouterProvider, $stateProvider) {
 
     .state('yofc-cmp.cloud-resource-mgr.network', {
             url: '/network',
-            templateUrl: networkTpl
+            component: 'network'
         })
         .state('yofc-cmp.cloud-resource-mgr.security', {
             url: '/security',
             templateUrl: securityTpl
-        })
-        .state('yofc-cmp.cloud-resource-mgr.route-mgr', {
-            url: '/route-mgr',
-            component: 'routeMgr'
         })
 
     $urlRouterProvider.otherwise('/');

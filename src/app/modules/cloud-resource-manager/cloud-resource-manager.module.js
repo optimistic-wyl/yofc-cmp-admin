@@ -8,6 +8,8 @@ import cloudResourceManagerController from './cloud-resource-manager.controller.
 import OverViewComponent from './overview/overview.component';
 //云计算资源
 import CalcComponent from './calc/calc.component';
+//云网络资源
+import NetworkComponent from './network/network.component';
 
 const cloudResourceManagerModule = angular.module('cloud-resource-manager-module', [
     // 模块级路由
@@ -17,5 +19,6 @@ cloudResourceManagerModule
     .controller('cloudResourceManagerController', cloudResourceManagerController)
     // 云资源概览组件（页面组件，用于组织页面）
     .component('overview', new OverViewComponent())
-    .component('calc', new CalcComponent());
+    .component('calc', new CalcComponent())
+    .component('network', new NetworkComponent());
 export default cloudResourceManagerModule;
