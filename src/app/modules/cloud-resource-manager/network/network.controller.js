@@ -6,10 +6,14 @@ import routeMgrTpl from './route-mgr.html';
 
 
 export default class NetworkController {
-    constructor($log) {
+    constructor($log, NgTableParams) {
         'ngInject';
         this.$log = $log;
         this.routeMgrTpl = routeMgrTpl;
+
+        const self = this;
+        const data = [{name: "Moroni", age: 50} /*,*/];
+        self.tableParams = new NgTableParams({}, { dataset: data});
     }
 
     $onInit() {

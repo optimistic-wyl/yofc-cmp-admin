@@ -1,3 +1,4 @@
+@import './yofc-font-awesome/font-awesome.scss';
 @import './yofc-bootstrap/bootstrap.scss';
 @import './yofc-framework-ui/yofc-framework-ui.scss';
 html {
@@ -38,4 +39,25 @@ body.index {
     footer {
         display: none;
     }
+    
+
+    $yofc-btn-primary-color:              #fff !default;
+    $yofc-btn-primary-bg:                 #006cff !default;
+    $yofc-btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+    .btn{
+        border-radius: 2px;
+    }
+    .btn-primary {
+        @include button-variant($yofc-btn-primary-color, $yofc-btn-primary-bg, $yofc-btn-primary-border);
+    }
+
+    .tool-bar {
+        height: 30px;
+        margin: 20px;
+        .btn{
+            float: left;
+            margin-right: 20px;
+        }
+    }
+    
 }
