@@ -2,7 +2,8 @@
 import _ from 'lodash/core';
 import moment from 'moment';
 
-export default class OverviewController {
+
+export default class NetworkController {
     constructor($log) {
         'ngInject';
         this.$log = $log;

@@ -1,12 +1,12 @@
 'use strict';
 
-import CloudResourceOverviewController from './overview.controller';
-import cloudResourceOverviewTpl from './overview.html';
+import OverviewController from './overview.controller';
+import overviewTpl from './overview.html';
 import './overview.scss';
 
 export default class CloudResourceOverviewComponent {
     constructor() {
-        this.controller = CloudResourceOverviewController;
-        this.templateUrl = cloudResourceOverviewTpl;
+        this.controller = OverviewController;
+        this.templateUrl = overviewTpl;
     }
 }
