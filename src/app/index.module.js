@@ -26,7 +26,7 @@ const App = angular.module(
         "restangular",
         "oc.lazyLoad",
         "ui.bootstrap",
-        "ng-table",
+        "ngTable",
 
         // core
         coreModule.name,
