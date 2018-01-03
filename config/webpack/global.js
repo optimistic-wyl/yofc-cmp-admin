@@ -18,8 +18,8 @@ module.exports = function(_path) {
     var webpackConfig = {
         // entry points
         entry: {
-            // app: _path + '/src/app/index.bootstrap.js',
-            login: _path + '/src/login/login.bootstrap.js'
+            app: _path + '/src/app/index.bootstrap.js',
+            // login: _path + '/src/login/login.bootstrap.js'
         },
 
         // output system
