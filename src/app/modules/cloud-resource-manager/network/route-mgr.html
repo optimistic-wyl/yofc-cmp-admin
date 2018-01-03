@@ -1,1 +1,18 @@
-rr
+<p class="tool-bar">
+    <button type="button" class="btn btn-primary btn-sm">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        新建
+    </button>
+    <button type="button" class="btn btn-default btn-sm">
+        <i class="fa fa-edit" aria-hidden="true"></i>
+        编辑
+    </button>
+</p>
+<table ng-table="$ctrl.tableParams" class="table" show-filter="true">
+    <tr ng-repeat="user in $data">
+        <td title="'Name'" filter="{ name: 'text'}" sortable="'name'">
+            {{user.name}}</td>
+        <td title="'Age'" filter="{ age: 'number'}" sortable="'age'">
+            {{user.age}}</td>
+    </tr>
+</table>

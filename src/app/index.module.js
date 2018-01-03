@@ -23,6 +23,7 @@ const App = angular.module(
         "ngSanitize",
         "ngMessages",
         "ngAria",
+        "ngTable",
         "restangular",
         "oc.lazyLoad",
         "ui.bootstrap",
