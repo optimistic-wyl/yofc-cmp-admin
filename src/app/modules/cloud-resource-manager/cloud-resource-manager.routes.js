@@ -40,6 +40,12 @@ function routeConfig($urlRouterProvider, $stateProvider) {
             url: '/security',
             templateUrl: securityTpl
         })
+        .state('yofc-cmp.cloud-resource-mgr.route-mgr', {
+            url: '/route-mgr',
+            component: 'routeMgr'
+        })
+
+    $urlRouterProvider.otherwise('/');
 }
 
 export default angular
