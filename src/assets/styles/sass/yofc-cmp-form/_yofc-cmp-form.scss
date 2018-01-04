@@ -1,0 +1,36 @@
+.btn{
+    border-radius: 2px;
+}
+.btn-primary {
+    @include button-variant($yofc-btn-primary-color, $yofc-btn-primary-bg, $yofc-btn-primary-border);
+}
+.#{$fix}btn-outline-primary {
+    @include button-variant($yofc-btn-outline-primary-color, $yofc-btn-primary-color, $yofc-btn-outline-primary-color);        
+}
+
+.#{$fix}btn-outline-danger {
+    @include button-variant($yofc-btn-outline-danger-color, $yofc-btn-primary-color, $yofc-btn-outline-danger-color);        
+}
+
+.#{$fix}btn-outline-warning {
+    @include button-variant($yofc-btn-outline-warning-color, $yofc-btn-primary-color, $yofc-btn-outline-warning-color);        
+}
+
+.tool-bar {
+    height: 30px;
+    margin: 20px;
+    .btn{
+        float: left;
+        margin-right: 20px;
+    }
+    .form-inline{
+        float: left;
+        .btn{
+            float: none;
+        }
+        .form-control{
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+}

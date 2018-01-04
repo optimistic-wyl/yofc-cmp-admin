@@ -1,0 +1,51 @@
+<section class="tool-bar clearfix">
+    <button type="button" class="btn btn-primary btn-sm">
+        <i class="fa fa-plus" aria-hidden="true"></i>
+        新建
+    </button>
+    <button type="button" class="btn yc-btn-outline-primary btn-sm">
+        <i class="fa fa-edit" aria-hidden="true"></i>
+        绑定
+    </button>
+    <button type="button" class="btn yc-btn-outline-warning btn-sm">
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+        解绑
+    </button>
+    <button type="button" class="btn yc-btn-outline-danger btn-sm">
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+        删除浮动IP
+    </button>
+    <form class="form-inline">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <button type="button" class="btn btn-primary btn-sm">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            搜索
+        </button>
+    </form>
+    <button type="button" class="btn yc-btn-outline-primary btn-sm pull-right">
+        <i class="fa fa-trash-o" aria-hidden="true"></i>
+        刷新
+    </button>
+</section>
+
+
+<script type="text/ng-template" id="headerCheckbox.html">
+    <input type="checkbox" ng-model="checkboxes.checked" class="select-all" value=""/>
+</script>
+<table ng-table="$ctrl.tableParams" class="table">
+    <tr ng-repeat="user in $data">
+        <td header="'headerCheckbox.html'"><input type="checkbox" ng-model="checkboxes.items[user.id]" /></td>
+        <td title="'IP地址'" sortable="'name'">
+            {{user.name}}</td>
+        <td title="'资源名称'">
+            {{user.age}}</td>
+        <td title="'私网IP'">
+                {{user.age}}</td>
+        <td title="'状态'">
+                {{user.age}}</td>
+        <td title="'资源池'">
+                {{user.age}}</td>
+    </tr>
+</table>

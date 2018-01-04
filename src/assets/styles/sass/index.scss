@@ -2,6 +2,7 @@
 @import './yofc-bootstrap/bootstrap.scss';
 @import './yofc-framework-ui/yofc-framework-ui.scss';
 @import './yofc-ng-table/yofc-ng-table.scss';
+@import './yofc-cmp-form/yofc-cmp-form.scss';
 html {
     height: 100%;
     font-family: "Microsoft YaHei";
@@ -39,30 +40,6 @@ body.index {
     }
     footer {
         display: none;
-    }
-    
-
-    $yofc-btn-primary-color:              #fff !default;
-    $yofc-btn-primary-bg:                 #006cff !default;
-    $yofc-btn-primary-border:             darken($btn-primary-bg, 5%) !default;
-    $yofc-btn-default-color:              #9ac4fe !default;
-    .btn{
-        border-radius: 2px;
-    }
-    .btn-primary {
-        @include button-variant($yofc-btn-primary-color, $yofc-btn-primary-bg, $yofc-btn-primary-border);
-    }
-    .btn-blue {
-        @include button-variant($yofc-btn-default-color, $yofc-btn-primary-color, $yofc-btn-default-color);        
-    }
-
-    .tool-bar {
-        height: 30px;
-        margin: 20px;
-        .btn{
-            float: left;
-            margin-right: 20px;
-        }
     }
 
     .ng-table th{
