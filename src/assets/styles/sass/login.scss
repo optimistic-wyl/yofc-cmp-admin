@@ -1,3 +1,4 @@
+@import './yofc-bootstrap/bootstrap/normalize';
 html {
     height: 100%;
     font-family: "Microsoft YaHei";
@@ -10,4 +11,10 @@ body {
 body.login {
     background: #0f0f10 url(../../images/yofc-login-bg.png) no-repeat center center;
     // background-size: 100% 100%;
+}
+
+// 登录框定位
+yofc-login {
+    display: block;
+    height: 100%;
 }
