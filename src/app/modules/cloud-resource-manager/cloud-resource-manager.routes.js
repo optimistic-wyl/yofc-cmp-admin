@@ -25,6 +25,14 @@ function routeConfig($urlRouterProvider, $stateProvider) {
         url: '/store',
         templateUrl: storeTpl
     })
+    .state('yofc-cmp.cloud-resource-mgr.store.san-mgr', {
+        url: '/san-mgr',
+        component: 'sanMgr'
+    })
+    .state('yofc-cmp.cloud-resource-mgr.store.object-mgr', {
+        url: '/object-mgr',
+        component: 'objectMgr'
+    })
 
     .state('yofc-cmp.cloud-resource-mgr.network', {
             url: '/network',

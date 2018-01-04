@@ -1,8 +1,19 @@
 <div class="main-content">
-    <uib-tabset active="active">
-        <uib-tab index="0" heading="SAN存储管理">SAN存储管理</uib-tab>
-        <uib-tab index="1" heading="对象存储管理">对象存储管理</uib-tab>
-        <uib-tab index="2" heading="块存储管理">块存储管理</uib-tab>
-        <uib-tab index="3" heading="存储概况">存储概况</uib-tab>
-    </uib-tabset>
+    <div active="active">
+        <ul class="nav nav-tabs">
+            <li class="uib-tab nav-item" index="0" heading="SAN存储管理" ui-sref="yofc-cmp.cloud-resource-mgr.store.san-mgr" ui-sref-active="active">
+                <a href="" class="nav-link">SAN存储管理</a>
+            </li>
+            <li class="uib-tab nav-item" index="1" heading="对象存储管理" ui-sref="yofc-cmp.cloud-resource-mgr.store.object-mgr" ui-sref-active="active">
+                <a href="" class="nav-link">对象存储管理</a>
+            </li>
+            <li class="uib-tab nav-item" index="2" heading="块存储管理" ui-sref="yofc-cmp.cloud-resource-mgr.network.network-config" ui-sref-active="active">
+                <a href="" class="nav-link">块存储管理</a>
+            </li>
+            <li class="uib-tab nav-item" index="3" heading="存储概况">
+                <a href="" class="nav-link">存储概况</a>
+            </li>
+        </ul>
+    </div>
+    <div ui-view></div>
 </div>
