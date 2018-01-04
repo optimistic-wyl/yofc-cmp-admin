@@ -64,4 +64,39 @@
             margin-top: -7px;
         }
     }
+    .login-form-body {
+        form {
+            padding: 30px;
+            >div.form-group {
+                position: relative;
+                margin-bottom: 25px;
+                label.input-addon-icon {
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    text-indent: -999999px;
+                    background-color: red;
+                    position: absolute;
+                    top: 5px;
+                    left: 13px;
+                    &.account {
+                        background: url("../../../assets/images/icons_14x14/yofc-account-icon.png") no-repeat center center;
+                    }
+                    &.password {
+                        background: url("../../../assets/images/icons_14x14/yofc-password-icon.png") no-repeat center center;
+                    }
+                }
+                input {
+                    text-indent: 42px;
+                }
+                .btn-login-submit {
+                    background-color: #14c1de;
+                    font-size: 16px;
+                    color: #fff;
+                    border-radius: 20px;
+                    ;
+                }
+            }
+        }
+    }
 }
