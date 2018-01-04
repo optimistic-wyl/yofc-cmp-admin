@@ -19,7 +19,7 @@ module.exports = function(_path) {
         // entry points
         entry: {
             app: _path + '/src/app/index.bootstrap.js',
-            // login: _path + '/src/login/login.bootstrap.js'
+            login: _path + '/src/login/login.bootstrap.js'
         },
 
         // output system
@@ -168,6 +168,11 @@ module.exports = function(_path) {
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: path.join(_path, 'src', 'tpl-index.ejs')
+            }),
+
+            new HtmlWebpackPlugin({
+                filename: 'login.html',
+                template: path.join(_path, 'src', 'tpl-login.ejs')
             })
         ]
     };
