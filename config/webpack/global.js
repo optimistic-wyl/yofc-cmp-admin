@@ -167,12 +167,14 @@ module.exports = function(_path) {
             }),
             new HtmlWebpackPlugin({
                 filename: 'index.html',
-                template: path.join(_path, 'src', 'tpl-index.ejs')
+                template: path.join(_path, 'src', 'tpl-index.ejs'),
+                chunks: ['index']
             }),
 
             new HtmlWebpackPlugin({
                 filename: 'login.html',
-                template: path.join(_path, 'src', 'tpl-login.ejs')
+                template: path.join(_path, 'src', 'tpl-login.ejs'),
+                chunks: ['login']
             })
         ]
     };

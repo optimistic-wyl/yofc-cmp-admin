@@ -1,10 +1,6 @@
 'use strict';
-//import headerModule from './components/header/header.module';
-//import footerModule from './components/footer/footer.module';
-//import asideNavModule from './components/aside-nav/aside-nav.module';
+import LoginComponent from './components/login/login.component';
 
-export default angular.module('login.components', [
-    //headerModule.name,
-    //footerModule.name,
-    //asideNavModule.name
-]);
+
+export default angular.module('login.components', [])
+    .component('yofcLogin', new LoginComponent());
