@@ -1,8 +1,110 @@
 <uib-tabset active="active">
     <uib-tab index="0" heading="交换机">
-        交换机
+        <section class="tool-bar clearfix">
+            <button type="button" class="btn btn-primary btn-sm">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                新建
+            </button>
+            <button type="button" class="btn yc-btn-outline-primary btn-sm">
+                <i class="fa fa-edit" aria-hidden="true"></i>
+                编辑
+            </button>
+            <button type="button" class="btn yc-btn-outline-danger btn-sm">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                删除网关
+            </button>
+            <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    搜索
+                </button>
+            </form>
+            <button type="button" class="btn yc-btn-outline-primary btn-sm pull-right">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                刷新
+            </button>
+        </section>
+        
+        
+        <script type="text/ng-template" id="headerCheckbox.html">
+            <input type="checkbox" ng-model="checkboxes.checked" class="select-all" value=""/>
+        </script>
+        <table ng-table="$ctrl.tableParams" class="table">
+            <tr ng-repeat="user in $data">
+                <td header="'headerCheckbox.html'"><input type="checkbox" ng-model="checkboxes.items[user.id]" /></td>
+                <td title="'交换机名称'" sortable="'name'">
+                    {{user.name}}</td>
+                <td title="'绑定的子网'">
+                    {{user.age}}</td>
+                <td title="'状态'">
+                        {{user.age}}</td>
+                <td title="'共享'">
+                        {{user.age}}</td>
+                <td title="'外部网络'">
+                        {{user.age}}</td>
+                <td title="'网络详情'">
+                        {{user.age}}</td>
+                <td title="'带宽（Mpbs）'">
+                    {{user.age}}</td>
+            </tr>
+        </table>
     </uib-tab>
     <uib-tab index="1" heading="子网">
-        子网
+        <section class="tool-bar clearfix">
+            <button type="button" class="btn btn-primary btn-sm">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                新建
+            </button>
+            <button type="button" class="btn yc-btn-outline-primary btn-sm">
+                <i class="fa fa-edit" aria-hidden="true"></i>
+                编辑
+            </button>
+            <button type="button" class="btn yc-btn-outline-danger btn-sm">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                删除网关
+            </button>
+            <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="">
+                </div>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    搜索
+                </button>
+            </form>
+            <button type="button" class="btn yc-btn-outline-primary btn-sm pull-right">
+                <i class="fa fa-trash-o" aria-hidden="true"></i>
+                刷新
+            </button>
+        </section>
+        
+        
+        <script type="text/ng-template" id="headerCheckbox.html">
+            <input type="checkbox" ng-model="checkboxes.checked" class="select-all" value=""/>
+        </script>
+        <table ng-table="$ctrl.childtableParams" class="table">
+            <tr ng-repeat="user in $data">
+                <td header="'headerCheckbox.html'"><input type="checkbox" ng-model="checkboxes.items[user.id]" /></td>
+                <td title="'子网名称'" sortable="'name'">
+                    {{user.name}}</td>
+                <td title="'子网CIDR'">
+                    {{user.age}}</td>
+                <td title="'网关'">
+                        {{user.age}}</td>
+                <td title="'IP池'">
+                        {{user.age}}</td>
+                <td title="'IP版本'">
+                        {{user.age}}</td>
+                <td title="'使用DHCP'">
+                    {{user.age}}</td>
+                <td title="'附加路由'">
+                    {{user.age}}</td>
+                <td title="'DNS域名服务器'">
+                    {{user.age}}</td>
+            </tr>
+        </table>
     </uib-tab>
 </uib-tabset>

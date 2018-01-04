@@ -45,7 +45,7 @@ export default class RouteMgrController {
             });
         });
           
-          // watch for data checkboxes
+        // watch for data checkboxes
         $scope.$watch('checkboxes.items', function() {
             let checked = 0, unchecked = 0,
                 total = data.length;
