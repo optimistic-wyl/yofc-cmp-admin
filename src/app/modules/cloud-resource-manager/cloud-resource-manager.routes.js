@@ -30,6 +30,18 @@ function routeConfig($urlRouterProvider, $stateProvider) {
             url: '/network',
             component: 'network'
         })
+        .state('yofc-cmp.cloud-resource-mgr.network.route-mgr', {
+            url: '/route-mgr',
+            component: 'routeMgr'
+        })
+        .state('yofc-cmp.cloud-resource-mgr.network.float-ip', {
+            url: '/float-ip',
+            component: 'floatIp'
+        })
+        .state('yofc-cmp.cloud-resource-mgr.network.network-config', {
+            url: '/network-config',
+            component: 'networkConfig'
+        })
         .state('yofc-cmp.cloud-resource-mgr.security', {
             url: '/security',
             templateUrl: securityTpl

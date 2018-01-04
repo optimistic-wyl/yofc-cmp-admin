@@ -1,10 +1,19 @@
 <div class="main-content">
-    <uib-tabset active="active">
-        <uib-tab index="0" heading="路由管理">
-            <route-mgr></route-mgr>
-        </uib-tab>
-        <uib-tab index="1" heading="浮动IP地址">浮动IP地址</uib-tab>
-        <uib-tab index="2" heading="网络配置">网络配置</uib-tab>
-        <uib-tab index="3" heading="网络拓扑图">网络拓扑图</uib-tab>
-    </uib-tabset>
+    <div active="active" class="ng-isolate-scope">
+        <ul class="nav nav-tabs">
+            <li class="uib-tab nav-item" index="0" heading="路由管理" ui-sref="yofc-cmp.cloud-resource-mgr.network.route-mgr" ui-sref-active="active">
+                <a href="" class="nav-link">路由管理</a>
+            </li>
+            <li class="uib-tab nav-item" index="1" heading="浮动IP地址" ui-sref="yofc-cmp.cloud-resource-mgr.network.float-ip" ui-sref-active="active">
+                <a href="" class="nav-link">浮动IP地址</a>
+            </li>
+            <li class="uib-tab nav-item" index="2" heading="网络配置" ui-sref="yofc-cmp.cloud-resource-mgr.network.network-config" ui-sref-active="active">
+                <a href="" class="nav-link">网络配置</a>
+            </li>
+            <li class="uib-tab nav-item" index="3" heading="网络拓扑图">
+                <a href="" class="nav-link">网络拓扑图</a>
+            </li>
+        </ul>
+    </div>
+    <div ui-view></div>
 </div>

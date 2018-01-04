@@ -12,6 +12,10 @@ import CalcComponent from './calc/calc.component';
 import NetworkComponent from './network/network.component';
 import RouteMgrController from './network/route-mgr/route-mgr.controller';
 import routeMgrTpl from './network/route-mgr/route-mgr.html'; 
+import FloatIpController from './network/float-ip/float-ip.controller';
+import floatIpTpl from './network/float-ip/float-ip.html';
+import NetworkController from './network/network-config/network-config.controller';
+import networkConfigTpl from './network/network-config/network-config.html'
 
 const cloudResourceManagerModule = angular.module('cloud-resource-manager-module', [
     // 模块级路由
@@ -26,5 +30,13 @@ cloudResourceManagerModule
     .component('routeMgr', {
         controller: RouteMgrController,
         templateUrl: routeMgrTpl
+    })
+    .component('floatIp', {
+        controller: FloatIpController,
+        templateUrl: floatIpTpl
+    })
+    .component('networkConfig', {
+        controller: NetworkController,
+        templateUrl: networkConfigTpl
     });
 export default cloudResourceManagerModule;
