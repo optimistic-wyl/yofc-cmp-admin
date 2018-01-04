@@ -168,7 +168,7 @@ module.exports = function(_path) {
             new HtmlWebpackPlugin({
                 filename: 'index.html',
                 template: path.join(_path, 'src', 'tpl-index.ejs'),
-                chunks: ['index']
+                chunks: ['app']
             }),
 
             new HtmlWebpackPlugin({
