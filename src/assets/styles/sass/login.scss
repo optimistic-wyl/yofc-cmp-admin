@@ -1,4 +1,13 @@
+@import "./yofc-bootstrap/bootstrap/variables";
+@import "./yofc-bootstrap/bootstrap/mixins";
 @import './yofc-bootstrap/bootstrap/normalize';
+@import "./yofc-bootstrap/bootstrap/scaffolding";
+@import "./yofc-bootstrap/bootstrap/type";
+@import "./yofc-bootstrap/bootstrap/forms";
+@import "./yofc-bootstrap/bootstrap/buttons";
+// Utility classes
+@import "./yofc-bootstrap/bootstrap/utilities";
+@import "./yofc-bootstrap/bootstrap/responsive-utilities";
 html {
     height: 100%;
     font-family: "Microsoft YaHei";

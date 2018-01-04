@@ -42,7 +42,7 @@
             display: block;
             width: 100%;
             height: 100%;
-            background: url('../../../assets/images/icons/yofc-cmp-expand-on.png') no-repeat center center;
+            background: url('../../../assets/images/icons_24x24/yofc-cmp-expand-on.png') no-repeat center center;
             cursor: pointer;
             &:hover {
                 background-color: #006bff;
@@ -85,19 +85,19 @@
                         left: 13px;
                         // 不同的图标设置
                         &.yofc-cmp-database-icon {
-                            background: url('../../../assets/images/icons/yofc-cmp-database-icon.png') no-repeat center center;
+                            background: url('../../../assets/images/icons_24x24/yofc-cmp-database-icon.png') no-repeat center center;
                         }
                         &.yofc-cmp-current-project {
-                            background: url('../../../assets/images/icons/yofc-cmp-current-project.png') no-repeat center center;
+                            background: url('../../../assets/images/icons_24x24/yofc-cmp-current-project.png') no-repeat center center;
                         }
                         &.yofc-cmp-workflow-order {
-                            background: url('../../../assets/images/icons/yofc-cmp-workflow-order.png') no-repeat center center;
+                            background: url('../../../assets/images/icons_24x24/yofc-cmp-workflow-order.png') no-repeat center center;
                         }
                         &.yofc-cmp-current-user {
-                            background: url('../../../assets/images/icons/yofc-cmp-current-user.png') no-repeat center center;
+                            background: url('../../../assets/images/icons_24x24/yofc-cmp-current-user.png') no-repeat center center;
                         }
                         &.yofc-cmp-calendar-icon {
-                            background: url('../../../assets/images/icons/yofc-cmp-calendar-icon.png') no-repeat center center;
+                            background: url('../../../assets/images/icons_24x24/yofc-cmp-calendar-icon.png') no-repeat center center;
                         }
                     }
                     // 导航item 文字
