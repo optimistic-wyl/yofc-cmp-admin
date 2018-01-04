@@ -10,6 +10,8 @@ import OverViewComponent from './overview/overview.component';
 import CalcComponent from './calc/calc.component';
 //云网络资源
 import NetworkComponent from './network/network.component';
+import RouteMgrController from './network/route-mgr/route-mgr.controller';
+import routeMgrTpl from './network/route-mgr/route-mgr.html'; 
 
 const cloudResourceManagerModule = angular.module('cloud-resource-manager-module', [
     // 模块级路由
@@ -20,5 +22,9 @@ cloudResourceManagerModule
     // 云资源概览组件（页面组件，用于组织页面）
     .component('overview', new OverViewComponent())
     .component('calc', new CalcComponent())
-    .component('network', new NetworkComponent());
+    .component('network', new NetworkComponent())
+    .component('routeMgr', {
+        controller: RouteMgrController,
+        templateUrl: routeMgrTpl
+    });
 export default cloudResourceManagerModule;
